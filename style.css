@@ -1,6 +1,8 @@
 .mainBodyLeftTitle{
- width: 1510px;
- height: 710px;
- border: 2px solid #000000;
- background: #0f4c75;
+ width: 760px;
+ height: 560px;
+ font-size: 30pt;
+ top: 120px;
+ border: 10px solid #0f4c75;
+ background: #bbe1fa;
 }
