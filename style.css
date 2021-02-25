@@ -3,6 +3,13 @@ body {
  color: #212121;
  font-family: sans-serif;
  font-size: 16px;
+ margin: 0;
+}
+
+.header {
+ background-color: #ffa500;
+ max-height: 72px;
+ min-height: 72px;
 }
 
 .mainBody {
