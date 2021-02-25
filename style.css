@@ -1,8 +1,38 @@
-.mainBodyLeftTitle{
- width: 760px;
- height: 560px;
- font-size: 30pt;
- top: 120px;
- border: 10px solid #0f4c75;
- background: #bbe1fa;
+body {
+ background-color: #f8f8f8;
+ color: #212121;
+ font-family: sans-serif;
+ font-size: 16px;
+}
+
+.mainBody {
+ padding: 32px;
+}
+
+.mainBodyLeft {
+ float: left;
+ max-width: 80%;
+ min-width: 80%;
+}
+
+.mainBodyLeftBody {
+ float: right;
+ max-width: 80%;
+ min-width: 80%;
+}
+
+.mainBodyRight {
+ float: right;
+ max-width: 20%;
+ min-width: 20%;
+}
+
+.mainBodyRightBody {
+ float: left;
+ max-width: 80%;
+ min-width: 80%;
+}
+
+#title {
+ font-size: 50px;
 }
