@@ -11,6 +11,8 @@ body {
  background-color: #ffa500;
  max-height: 60px;
  min-height: 60px;
+ align-items: center;
+ display: flex;
 }
 
 .headerLeft {
