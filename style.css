@@ -8,8 +8,40 @@ body {
 
 .header {
  background-color: #ffa500;
- max-height: 72px;
- min-height: 72px;
+ max-height: 60px;
+ min-height: 60px;
+}
+
+.headerLeft {
+ float: left;
+ max-width: 40%;
+ min-width: 40%;
+}
+
+.headerCenter {
+ float: left;
+ max-width: 35%;
+ min-width: 35%;
+ font-size: 23px;
+ line-height: 60px;
+ text-align: center;
+}
+
+.headerRight {
+ float: right;
+ max-width: 25%;
+ min-width: 25%;
+ font-size: 23px;
+ line-height: 60px;
+ text-align: center;
+}
+
+.header a {
+ color: #212121;
+}
+
+img.logo {
+ width: 100%;
 }
 
 .mainBody {
@@ -41,5 +73,5 @@ body {
 }
 
 #title {
- font-size: 50px;
+ font-size: 40px;
 }
