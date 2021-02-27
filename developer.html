@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="https://ORIKAMI-NEP.github.io/Test/style.css">
+ <title>プロコン部1年生チュートリアル</title>
+ <link rel="icon" href="icon.ico">
+</head>
+
+<body>
+ <div class=header>
+  <div class=headerLeft>
+   <a href="index.html"><img class=logo src="logo.png" alt="ロゴ"></a>
+  </div>
+  <div class=headerCenterLeft>
+   <a href="environment.html">MyPCを持っている子は<br>こちら(環境構築編)</a>
+  </div>
+  <div class=headerCenterRight>
+   <a href="another.html">別のことがしたい子は<br>こちら</a>
+  </div>
+  <div class=headerRight>
+   <a href="developer.html">デベロッパーへ</a>
+  </div>
+ </div>
+ <div class=mainBody>
+  <div class=mainBodyLeft>
+   <div class=mainBodyLeftBody>
+    <h1>
+     プログラムとは
+    </h1>
+    <div class=mainBodyLeftBodyBody>
+     <h2>
+      Javaについて
+     </h2>
+     <div class=mainBodyLeftBodyBodyBody>
+      <div class=jump>
+       <ol>
+        <a href="#P1">
+         <li>
+          プログラミング言語
+         </li>
+        </a>
+        <a href="#P2">
+         <li>
+          Javaの説明
+         </li>
+        </a>
+        <a href="#P3">
+         <li>
+          Javaのメリット・デメリット
+         </li>
+        </a>
+        <a href="#P4">
+         <li>
+          なぜJavaから勉強するのか
+         </li>
+        </a>
+       </ol>
+      </div>
+      <div class=mainBodyLeftBodyBodyBodyBody>
+       <h3 id=P1>
+        プログラミング言語
+       </h3>
+       <div class=content>
+        <p>
+         ネットで調べてね
+        </p>
+       </div>
+       <h3 id=P2>
+        Javaの説明
+       </h3>
+       <div class=content>
+        <p>
+         世界的に見ても使用されている言語、習得したい言語として1位を記録するほどに実績のある言語です。
+         なぜここまで人気が高いのかを説明すると、
+         <b>
+          「Javaは多くの現場で使われていること」
+         </b>
+         、
+         <b>
+          「汎用的でOSに依存しないこと」
+         </b>
+         などの理由があります。
+         OSに依存しないという点は重要で、作成したソフトが動く環境を考えるというのはプログラマーにとって大変な問題です。
+         macOSなのかWindowsなのかでさえもとても重要な問題です。
+         そんな中でも安定して動作するプラットフォームを提供してくれるJavaという言語は人気が高いといえるでしょう。
+        </p>
+        <p class=black>
+         ↓Javaのコード例
+        </p>
+        <pre>
+                  <code id=color>
+class hoge {
+    public static void main(String args[]) {
+        System.out.println(s""Hello World!"e")</span>
+    }
+}
+                  </code>
+                </pre>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class=mainBodyRight>
+   <div class=mainBodyRightBody>
+    <div class=mainTitle>
+     <h1>もくじ</h1>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script type="text/javascript">
+  $('#color').each(function () { //ソースコード内の特定の文字列に色を付与する関数
+   let txt = $(this).text();
+   let color = [ //[0]に付与したい色のカラーネーム,またはカラーコード、[1~]に色を変えたい文字列
+    ['#4169e1', 'class', 'public', 'private', 'static', '\\n'], //修飾子など⇒青
+    ['#f0e68c', 'main', 'System', 'out', 'println', 'printf', 'print'], //メソッド名など⇒黄
+    ['#9932cc', 'if', 'for', 'while', 'switch'], //制御文など⇒紫(doは別途)
+    ['#66cdaa', 'float', 'double', 'char', 'String', 'boolean', 'void'] //型など⇒緑(intは別途)
+   ];
+   let all = "$(this).html(txt";
+   for (let i = 0; i < color.length; i++)
+    for (let j = 1; j < color[i].length; j++)
+     all += ".replace(/" + color[i][j] + "/g,'<span style=\"color:" + color[i][0] + "\">" + color[i][j] +
+     "</span>')";
+   all += ".replace(/s\"/g,'<span style=\"color:#f08080\">')";
+   all += ".replace(/e\"/g,'</span>')";
+   all += ");";
+   console.log(all);
+   eval(all);
+  });
+ </script>
+</body>
+
+</html>
