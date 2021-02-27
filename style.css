@@ -155,18 +155,6 @@ b {
  color: #ef4747;
 }
 
-.black {
- font-size: 20px;
- line-height: 22px;
- font-weight: bolder;
-}
-
-.red {
- color: #ef4747;
- font-size: 20px;
- line-height: 22px;
- font-weight: bolder;
-}
 
 pre {
  background: #25292f;
@@ -175,6 +163,26 @@ pre {
  margin: 1em 0;
  border-top: solid 5px #5d627b;
  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.cls {
+ color: #4169e1;
+}
+
+.method {
+ color: #f0e68c;
+}
+
+.ctrl {
+ color: #9932cc;
+}
+
+.type {
+ color: #66cdaa;
+}
+
+.string {
+ color: #f08080;
 }
 
 .mainBodyRight {
