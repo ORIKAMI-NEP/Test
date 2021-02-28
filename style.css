@@ -66,6 +66,12 @@ main {
  margin-bottom: 70px;
 }
 
+article {
+ float: left;
+ max-width: 80%;
+ min-width: 80%;
+}
+
 .mainLeft {
  float: right;
  max-width: 80%;
@@ -90,12 +96,12 @@ h1 {
 
 h2 {
  margin-top: 1.8em;
+ margin-left: 3em;
  margin-bottom: 2em;
  line-height: 50px;
  font-family: MS PGothic;
  font-size: 50px;
  font-weight: bolder;
- text-align: center;
 }
 
 nav.menu {
