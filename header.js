@@ -22,6 +22,11 @@ let content = [
 
   /* =========================================================================================== */
 ];
+let content2 = [
+  ["環境構築編", "JDKとVSCode"],
+  ["番外編", "別言語,GitHub,プレゼン資料"],
+  ["編集者へ", "編集指南書"],
+];
 let txt =
   "<div class=headerLeft><a href='index.html'><img class=logo src='logo.png' alt='ロゴ'></a></div><div class=headerCenterLeft><a href='environment.html'>MyPCを持っている子は<br>こちら(環境構築編)</a></div><div class=headerCenterRight><a href='another.html'>別のことがしたい子は<br>こちら(番外編)</a></div><div class=headerRight><a href='developer.html'>デベロッパーへ</a></div>";
 let all = "";
