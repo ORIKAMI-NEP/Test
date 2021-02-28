@@ -1,41 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
  <meta charset="utf-8">
- <link rel="stylesheet" href="https://ORIKAMI-NEP.github.io/Test/style.css">
- <title>プロコン部1年生チュートリアル-番外編</title>
+ <link rel="stylesheet" href="style.css">
+ <title>プロコン部1年生チュートリアル</title>
  <link rel="icon" href="icon.ico">
 </head>
 
 <body>
- <div class=header>
+ <header id=header>
   <div class=headerLeft>
    <a href="index.html"><img class=logo src="logo.png" alt="ロゴ"></a>
   </div>
-  <div class=headerCenter>
-   <a href="environment.html">MyPCを持っている子はこちら(環境構築編)</a>
+  <div class=headerCenterLeft>
+   <a href="environment.html">MyPCを持っている子は<br>こちら(環境構築編)</a>
+  </div>
+  <div class=headerCenterRight>
+   <a href="another.html">別のことがしたい子は<br>こちら(応用編)</a>
   </div>
   <div class=headerRight>
-   <a href="another.html">別のことがしたい子はこちら</a>
+   <a href="developer.html">デベロッパーへ</a>
   </div>
- </div>
- <div class=mainBody>
-  <div class=mainBodyLeft>
-   <div class=mainBodyLeftBody>
-    <div id=title>
-     Pythonとかやるといいよ。<br><br>なんかAI流行ってるみたいだし。
+ </header>
+ <main>
+  <article>
+   <div class=mainLeft>
+    <h1>
+     他のことがしたい子へ
+    </h1>
+    <div class=mainLeftBody>
+     <h2>
+      Git,プレゼン,AtCoder
+     </h2>
+     <nav class=menu>
+      <ul>
+       <li>
+        <a href="#P1">
+         ～鋭意製作中～
+        </a>
+       </li>
+       <li>
+        <a href="#P2">
+         ～鋭意製作中～
+        </a>
+       </li>
+       <li>
+        <a href="#P3">
+         ～鋭意製作中～
+        </a>
+       </li>
+      </ul>
+     </nav>
+     <section>
+      <h3 id=P1>
+       ～鋭意製作中～
+      </h3>
+      <div class=sectionBody>
+       <p>
+        ～鋭意製作中～
+       </p>
+       <hr>
+      </div>
+     </section>
+     <section>
+      <h3 id=P2>
+       ～鋭意製作中～
+      </h3>
+      <div class=sectionBody>
+       <p>
+        ～鋭意製作中～
+       </p>
+       <hr>
+      </div>
+     </section>
+     <section>
+      <h3 id=P3>
+       ～鋭意製作中～
+      </h3>
+      <div class=sectionBody>
+       <p>
+        ～鋭意製作中～
+       </p>
+       <hr>
+      </div>
+     </section>
+     <div class=bottom>
+      <a href="#header" class=bottomCenter>ページトップへ</a>
+     </div>
     </div>
+   </div>
+  </article>
+  <div class=mainRight>
+   <div class=mainRightBody>
+    <h1>もくじ</h1>
+    <nav class=table>
+     <h4>
+      0話:イントロダクション
+     </h4>
+     <ol>
+      <li>
+       <a href="index.html">
+        このサイトの見方
+       </a>
+      </li>
+      <li>
+       <a href="00-02.html">
+        Javaについて
+       </a>
+      </li>
+     </ol>
+     <h4>
+      1話:プログラムの実行
+     </h4>
+     <ol>
+      <li>
+       <a href="01-01.html">
+        VSCodeの使い方
+       </a>
+      </li>
+      <li>
+       <a href="01-02.html">
+        Javaの基本
+       </a>
+      </li>
+      <li>
+       <a href="01-03">
+        プログラムの実行
+       </a>
+      </li>
+     </ol>
+    </nav>
+   </div>
+  </div>
+ </main>
+ <footer>
+  <small>Copyright © 2021 NICT-ANAN PROCON All Rights Reserved.</small>
+ </footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script>
+  $('#code').each(function () {
+   let txt = $(this).text();
+   let color = [
 
-   </div>
-  </div>
-  <div class=mainBodyRight>
-   <div class=mainBodyRightBody>
-    <div id=title>
-    </div>
-   </div>
-  </div>
- </div>
+    /* ========================================================================================
+
+    ソースコード内の特定の単語に色を付与できる
+    [0]に付与したい色のカラーネーム,またはカラーコード、[1~]に色を変えたい単語
+    intとpr"int"などその単語が含まれる別の単語が存在する場合、前に@を付けるようにしてください
+    文字列に対しては「s@」と「@s」で囲ってください（例：s@"文字列"@s）
+
+    ---------------------------------------------------------------------------------------- */
+
+    ['#4169e1', 'class', 'public', 'private', 'static', '\\n'],
+    /* 修飾子など⇒青 */
+
+    ['#f0e68c', 'main', 'System', 'out', 'println', 'printf', 'print'],
+    /* メソッド名など⇒黄 */
+
+    ['#9932cc', 'if', 'for', 'while', '@do', 'switch'],
+    /* 制御文など⇒紫(@:do) */
+
+    ['#66cdaa', '@int', 'float', 'double', 'char', 'String', 'boolean', 'void']
+    /* 型など⇒緑(@:int) */
+
+    /* ===================================================================================== */
+
+   ];
+   let all = "$(this).html(txt";
+   for (let i = 0; i < color.length; i++)
+    for (let j = 1; j < color[i].length; j++)
+     if (color[i][j].slice(0, 1) === '@')
+      all += ".replace(/" + color[i][j] + "/g,'<span style=\"color:" + color[i][0] + "\">" + color[i][j]
+      .slice(1) +
+      "</span>')";
+     else
+      all += ".replace(/" + color[i][j] + "/g,'<span style=\"color:" + color[i][0] + "\">" + color[i][j] +
+      "</span>')";
+   all += ".replace(/s@/g,'<span style=\"color:#f08080\">')";
+   all += ".replace(/@s/g,'</span>')";
+   all += ".replace(/m@/g,'<span style=\"color:#f0e68c\">')";
+   all += ".replace(/@m/g,'</span>')";
+   all += ");";
+   eval(all);
+  });
+ </script>
 </body>
 
 </html>
