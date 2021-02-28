@@ -11,96 +11,124 @@
 
 <body>
   <header id=header>
-    <div class=headerLeft>
-      <a href="index.html"><img class=logo src="logo.png" alt="ロゴ"></a>
-    </div>
-    <div class=headerCenterLeft>
-      <a href="environment.html">MyPCを持っている子は<br>こちら(環境構築編)</a>
-    </div>
-    <div class=headerCenterRight>
-      <a href="another.html">別のことがしたい子は<br>こちら(応用編)</a>
-    </div>
-    <div class=headerRight>
-      <a href="developer.html">デベロッパーへ</a>
-    </div>
+    <script src="header.js"></script>
   </header>
   <main>
     <article>
-      <div class=mainLeft>
-        <h1>
-          プログラムとは
-        </h1>
-        <div class=mainLeftBody>
-          <h2>
-            Javaについて
-          </h2>
+      <div class=mainLeft id=header2>
+        <script src="header2.js"></script>
+        <div class=mainLeftBody id=header3>
+          <script src="header3.js"></script>
+
+          <!-- ↓編集部分 -->
           <nav class=menu>
             <ul>
+
+              <!-- ↓メニュー：増やすときは<li>~</li>をコピペしてhref="#P*"の数字も増やしてください -->
               <li>
                 <a href="#P1">
-                  プログラミング言語
+                  このサイトの使い方
                 </a>
               </li>
               <li>
                 <a href="#P2">
-                  Javaの説明
+                  プログラミングの勉強方法
                 </a>
               </li>
-              <li>
-                <a href="#P3">
-                  なぜJavaから勉強するのか
-                </a>
-              </li>
+              <!-- ↑メニュー -->
+
             </ul>
           </nav>
+
+          <!-- ↓セクション：増やすときは<section>~</section>をコピペしてください -->
           <section>
+
+            <!-- ↓小見出し：id=P*の数字も増やしてください -->
             <h3 id=P1>
-              プログラミング言語
+              このサイトの使い方
             </h3>
+            <!-- ↑小見出し -->
+
+            <!-- ↓本文：タグの説明はデベロッパーページへ -->
             <div class=sectionBody>
               <p>
-                プログラミング言語とは、簡単に言えば
+                1年生の皆さん！プログラミング同好会へようこそ！
+              </p>
+              <p>
+                このサイトは1年生向けに作られたチュートリアルです。このサイトを読み進めていけば、基礎的な
                 <red>
-                  コンピュータが理解できる言語
+                  プログラミング能力
                 </red>
-                です。
+                はもちろん、プログラミング同好会で活動する上で
+                <red>
+                  非常に重要な技術
+                </red>
+                を学ぶことができます。
               </p>
               <p>
-                「"こんにちは"という文を出力」←これは私たち日本人には理解できますが、コンピュータには理解できません。英語に直しても同じです。そこでコンピュータにも理解できるように作られた言語がプログラミング言語なのです。
+                ですが、体験入部の人もいるかもしれませんので、初めの方は同好会外でも使えるプログラミングの基礎の基礎しかやりません。ご安心ください。
               </p>
               <p>
-                世界にはC言語やJava、Python、PHPなど200種類以上もの言語が存在しています。
+                このサイトの使い方は簡単で、ひたすら上から順に勉強していくだけです。ページ下に
+                <b>
+                  「前のページ」
+                </b>
+                と
+                <b>
+                  「次のページ」
+                </b>
+                へのリンクを貼ってあります。右側にも話数と見出しをまとめた
+                <b>
+                  「もくじ」
+                </b>
+                を用意してあります。前回勉強したところまですぐ飛ぶことができます。
               </p>
               <hr>
             </div>
+            <!-- ↑本文 -->
+
           </section>
           <section>
+
+            <!-- ↓小見出し：id=P*の数字も増やしてください -->
             <h3 id=P2>
-              Javaの説明
+              プログラミングの勉強方法
             </h3>
+            <!-- ↑小見出し -->
+
+
+            <!-- ↓本文：タグの説明はデベロッパーページへ -->
             <div class=sectionBody>
               <p>
-                今回はその数あるプログラミング言語の中から、Javaという言語について説明したいと思います。
+                基本的なプログラミングの勉強方法はこの2つです
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    インプット・アウトプット
+                  </b>
+                </li>
+                <li>
+                  <b>
+                    分からないことを調べる＆人に聞く
+                  </b>
+                </li>
+              </ul>
+              <p>
+                まずはインプットです。本やWebサイトを読みすすめてみましょう。
               </p>
               <p>
-                Javaは世界的に見ても使用されている言語、習得したい言語として1位を記録するほどに実績のある言語です。なぜここまで人気が高いのかというと、
-                <br>
+                次はアウトプットです。これはかなり重要で、いくらインプットをしたとしても、プログラムを書いていない人のプログラミング能力は絶対に伸びません。まずは
                 <red>
-                  「Javaは多くの現場で使われている」
+                  どんなものでもいいので、プログラムを書く
                 </red>
-                、
-                <red>
-                  「汎用的でOSに依存しない」
-                </red>
-                <br>
-                からなんです。
-                <p>
-                  OSに依存しないという点はとても重要で、例えばWindows用に作ったプログラムをMacでも動かしたい時、他の大半の言語であればわざわざMac用に書き換えなければいけません。しかしJavaはその必要がないのです。
-                </p>
-                <p>
-                  ↓Javaのコード例
-                </p>
-                <pre>
+                ところから初めてみましょう！
+
+              </p>
+              <p>
+                そして最後のは1番大事なことです。プログラミングを勉強し始めたときは誰でも分からないことだらけです。
+              </p>
+              <pre>
                   <code id=code>
 class hoge {
     public static void main(String args[]) {
@@ -109,131 +137,48 @@ class hoge {
 }
                   </code>
                 </pre>
-                <hr>
-            </div>
-          </section>
-          <section>
-            <h3 id=P3>
-              なぜJavaから勉強するのか
-            </h3>
-            <div class=sectionBody>
               <p>
-                さて、プログラミング同好会ではなぜJavaを初めに勉強するのか、それはずばり
-                <br>
-                <red>
-                  情報コースで1番初めに勉強するから
-                </red>
-                <br>
-                です。なんやねんと思うかもしれませんが、プログラミング言語は一度に複数を勉強するのは難しいと言われています。ただでさえ意味不明な文章のルールを、別の言語で分けて覚えようものなら頭がパンクするでしょう（多分）。よって、2年生で勉強するときにスムーズに理解できるように、まずはJavaを学んでもらいます。
+                ↑これは今後皆さんに勉強してもらうプログラミング言語の基本構文です。
               </p>
               <p>
-                え？みんなもちろん情報コース志望だよね？(汗)
+                もう何が書いてあるか全く分からないですよね？英語と同じで最初はみんな初心者なんです。勉強していく中でなぜ上手くいかないのか、エラーがたくさん出るのか、挫折しそうになることもあるでしょう。そういうときはまず
+                <red>
+                  ネットで検索
+                </red>
+                してみましょう。エラーメッセージをGoogleにコピペするだけでも意外と解決したりすることがあります。同じようなエラーが発生した人が解決策を書いたりしてくれているからです。
+                <br>
+                それでも分からないときは人に聞いてみましょう。友達でも先輩でもいいです。とにかく1人で悩まず
+                <red>
+                  助けを求める
+                </red>
+                ことが重要です。
               </p>
               <hr>
             </div>
+            <!-- ↑本文 -->
+
           </section>
-          <div class=bottom>
-            <a href="index.html">← 前に戻る</a>
-            <a href="#header" class=bottomCenter>ページトップへ</a>
-            <a href="01-01.html">次へ進む →</a>
+          <!-- ↑セクション -->
+
+          <!-- ↑編集部分 -->
+
+          <div id=bottom>
+            <script src="bottom.js"></script>
           </div>
         </div>
       </div>
     </article>
     <div class=mainRight>
-      <div class=mainRightBody>
-        <h1>もくじ</h1>
-        <nav class=table>
-          <h4>
-            0話:イントロダクション
-          </h4>
-          <ol>
-            <li>
-              <a href="index.html">
-                このサイトの見方
-              </a>
-            </li>
-            <li>
-              <a href="00-02.html">
-                Javaについて
-              </a>
-            </li>
-          </ol>
-          <h4>
-            1話:プログラムの実行
-          </h4>
-          <ol>
-            <li>
-              <a href="01-01.html">
-                VSCodeの使い方
-              </a>
-            </li>
-            <li>
-              <a href="01-02.html">
-                Javaの基本
-              </a>
-            </li>
-            <li>
-              <a href="01-03">
-                プログラムの実行
-              </a>
-            </li>
-          </ol>
-        </nav>
+      <div id=table>
+        <script src="table.js"></script>
       </div>
     </div>
   </main>
-  <footer>
-    <small>Copyright © 2021 NICT-ANAN PROCON All Rights Reserved.</small>
+  <footer id=footer>
+    <script src="footer.js"></script>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-    $('#code').each(function () {
-      let txt = $(this).text();
-      let color = [
-
-        /* ========================================================================================
-
-        ソースコード内の特定の単語に色を付与できる
-        [0]に付与したい色のカラーネーム,またはカラーコード、[1~]に色を変えたい単語
-        intとpr"int"などその単語が含まれる別の単語が存在する場合、前に@を付けるようにしてください
-        文字列に対しては「s@」と「@s」で囲ってください（例：s@"文字列"@s）
-
-        ---------------------------------------------------------------------------------------- */
-
-        ['#4169e1', 'class', 'public', 'private', 'static', '\\n'],
-        /* 修飾子など⇒青 */
-
-        ['#f0e68c', 'main', 'System', 'out', 'println', 'printf', 'print'],
-        /* メソッド名など⇒黄 */
-
-        ['#9932cc', 'if', 'for', 'while', '@do', 'switch'],
-        /* 制御文など⇒紫(@:do) */
-
-        ['#66cdaa', '@int', 'float', 'double', 'char', 'String', 'boolean', 'void']
-        /* 型など⇒緑(@:int) */
-
-        /* ===================================================================================== */
-
-      ];
-      let all = "$(this).html(txt";
-      for (let i = 0; i < color.length; i++)
-        for (let j = 1; j < color[i].length; j++)
-          if (color[i][j].slice(0, 1) === '@')
-            all += ".replace(/" + color[i][j] + "/g,'<span style=\"color:" + color[i][0] + "\">" + color[i][j]
-            .slice(1) +
-            "</span>')";
-          else
-            all += ".replace(/" + color[i][j] + "/g,'<span style=\"color:" + color[i][0] + "\">" + color[i][j] +
-            "</span>')";
-      all += ".replace(/s@/g,'<span style=\"color:#f08080\">')";
-      all += ".replace(/@s/g,'</span>')";
-      all += ".replace(/m@/g,'<span style=\"color:#f0e68c\">')";
-      all += ".replace(/@m/g,'</span>')";
-      all += ");";
-      eval(all);
-    });
-  </script>
+  <script src="code.js"></script>
 </body>
 
 </html>
