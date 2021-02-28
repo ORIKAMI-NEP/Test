@@ -1,19 +1,32 @@
+/* --- 主なタグ --- */
+
 body {
+ width: 100%;
+ line-height: 25px;
+ margin: 0;
  background-color: #f8f8f8;
  color: #212121;
  font-family: sans-serif;
  font-size: 16px;
- line-height: 25px;
- width: 100%;
- margin: 0;
 }
 
-.header {
- background-color: #ffc213;
- max-height: 80px;
- min-height: 80px;
- align-items: center;
+/* --- header --- */
+
+header {
  display: flex;
+ max-height: 70px;
+ min-height: 70px;
+ background-color: #ffc213;
+ align-items: center;
+}
+
+a {
+ color: #212121;
+}
+
+img.logo {
+ width: 100%;
+ padding: 4px;
 }
 
 .headerLeft {
@@ -41,7 +54,6 @@ body {
 }
 
 .headerRight {
- float: right;
  max-width: 10%;
  min-width: 10%;
  font-size: 18px;
@@ -49,134 +61,116 @@ body {
  text-align: center;
 }
 
-a {
- color: #212121;
-}
+/* --- main --- */
 
-img.logo {
- margin-top: 10px;
- width: 100%;
-}
-
-.mainBody {
+main {
  display: flex;
- margin: 10px 30px 40px 30px;
+ margin-bottom: 70px;
 }
 
-.mainBodyLeft {
- float: left;
- max-width: 80%;
- min-width: 80%;
-}
-
-.mainBodyLeftBody {
+.mainLeft {
  float: right;
  max-width: 80%;
  min-width: 80%;
-}
-
-
-.mainBodyLeftBodyBody {
- margin: 70px 30px 10px 30px;
 }
 
 h1 {
- max-width: 40%;
- min-width: 40%;
+ max-width: 50%;
+ min-width: 50%;
  padding: 0.5em;
- /*文字周りの余白*/
- color: #010101;
- /*文字色*/
  background: #eaf3ff;
- /*背景色*/
  border-bottom: solid 3px #516ab6;
- /*下線*/
+ color: #010101;
+ font-size: 40px;
+}
+
+.mainLeftBody {
+ float: right;
+ max-width: 90%;
+ min-width: 90%;
 }
 
 h2 {
- font-size: 50px;
+ margin-top: 1.8em;
+ margin-bottom: 2em;
  line-height: 50px;
  font-family: MS PGothic;
+ font-size: 50px;
  font-weight: bolder;
  text-align: center;
- margin-bottom: 1.1em;
 }
 
-.jump {
+nav.menu {
  max-width: 40%;
  min-width: 40%;
- margin-left: 0.5em;
 }
 
-ol li {
- border-left: solid 6px #1fa67a;
- /*左側の線*/
- border-bottom: solid 2px #dadada;
- /*下に灰色線*/
- background: whitesmoke;
- margin-bottom: 5px;
- /*下のバーとの余白*/
- line-height: 1.5;
- padding: 0.5em;
+ul {
+ padding-inline-start: 30px;
+}
+
+ul li {
  list-style-type: none !important;
- /*ポチ消す*/
+ line-height: 1.5;
+ margin-bottom: 5px;
+ padding: 0.5em;
+ border-left: solid 6px #1fa67a;
+ border-bottom: solid 2px #dadada;
+ background: whitesmoke;
  font-weight: bold;
 }
 
-.mainBodyLeftBodyBodyBodyBody {
- float: right;
- max-width: 87%;
- min-width: 87%;
- margin: 0px 20px 10px 20px;
+section {
+ width: 90%;
+ margin: 50px 10px 30px 10px;
 }
 
 h3 {
- font-size: 30px;
- margin-bottom: 1em;
  position: relative;
- padding-left: 1.2em;
- /*アイコン分のスペース*/
  line-height: 1.4;
+ margin-bottom: 10px;
+ padding-left: 1.2em;
+ font-size: 30px;
 }
 
 h3:before {
- font-family: "Font Awesome 5 Free";
- content: "\2714";
- /*アイコンのユニコード*/
- font-weight: 900;
  position: absolute;
- /*絶対位置*/
- font-size: 1em;
- /*サイズ*/
  left: 0;
- /*アイコンの位置*/
  top: 0;
- /*アイコンの位置*/
- color: #5ab9ff;
- /*アイコン色*/
+ font-family: "Font Awesome 5 Free";
+ font-size: 1em;
  font-weight: 900;
+ color: #5ab9ff;
+ content: "\2714";
 }
 
-.content {
- margin-bottom: 2em;
+.sectionBody {
+ max-width: 90%;
+ min-width: 90%;
 }
 
-b {
+red {
  color: #ef4747;
 }
 
+hr {
+ width: 100%;
+ margin-top: 40px;
+}
 
 pre {
+ margin: 1em 0;
+ padding: 0.05em 1em;
+ border-top: solid 5px #5d627b;
  background: #25292f;
  color: #ffffff;
- padding: 0.05em 1em;
- margin: 1em 0;
- border-top: solid 5px #5d627b;
  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
 
 .bottom {
- text-align: center;
+ float: right;
+ max-width: 80%;
+ min-width: 80%;
 }
 
 .bottomCenter {
@@ -184,19 +178,45 @@ pre {
  margin-right: 20px;
 }
 
-.hooter {
- background-color: #ffc213;
- max-height: 80px;
- min-height: 80px;
+footer {
  display: flex;
+ max-height: 70px;
+ min-height: 70px;
+ background-color: #ffc213;
 }
 
-.hooter p {
- margin: 3px;
+small {
+ padding: 4px;
 }
 
-.mainBodyRight {
+.mainRight {
  float: right;
  max-width: 20%;
  min-width: 20%;
+}
+
+.table {
+ padding: 8px;
+}
+
+h4 {
+ font-size: 18px;
+}
+
+.table a {
+ color: #2f14da;
+}
+
+ol {
+ max-width: 60%;
+ min-width: 60%;
+ padding: 0.5em 0 0.5em 1.5em;
+ border-top: solid #1e366a 1px;
+ border-bottom: solid #1e366a 1px;
+ color: #1e366a;
+}
+
+ol li {
+ line-height: 1.5;
+ padding: 0.5em 0;
 }
