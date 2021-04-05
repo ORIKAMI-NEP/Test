@@ -1,40 +1,253 @@
 html,
 body,
 main {
-  position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
+html header,
+body header,
+main header {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  width: 95%;
+  grid-template: "... start ... down ... disp ... up" /9% 20% 2% 21% 2% 21% 2% 20%;
+}
+
+html header #start,
+html header #down,
+html header #up,
+body header #start,
+body header #down,
+body header #up,
+main header #start,
+main header #down,
+main header #up {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 100%;
+  height: 8vh;
+  margin-top: 0.4em;
+  color: #03a9f4;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+html header #disp,
+body header #disp,
+main header #disp {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0.4em;
+  padding-top: 0.5em;
+  text-align: center;
+  color: #fff;
+  border-bottom: solid 6px #3f87ce;
+  background: #6eb7ff;
+}
+
+html header #disp p,
+body header #disp p,
+main header #disp p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+html header #start,
+body header #start,
+main header #start {
+  grid-area: start;
+}
+
+html header #down,
+body header #down,
+main header #down {
+  grid-area: down;
+}
+
+html header #disp,
+body header #disp,
+main header #disp {
+  grid-area: disp;
+}
+
+html header #up,
+body header #up,
+main header #up {
+  grid-area: up;
+}
+
 html #background,
 html #note1,
+html #note11,
+html #note12,
+html #note13,
+html #note14,
+html #note15,
 html #note2,
+html #note21,
+html #note22,
+html #note23,
+html #note24,
+html #note25,
 html #note3,
+html #note31,
+html #note32,
+html #note33,
+html #note34,
+html #note35,
 html #note4,
+html #note41,
+html #note42,
+html #note43,
+html #note44,
+html #note45,
 body #background,
 body #note1,
+body #note11,
+body #note12,
+body #note13,
+body #note14,
+body #note15,
 body #note2,
+body #note21,
+body #note22,
+body #note23,
+body #note24,
+body #note25,
 body #note3,
+body #note31,
+body #note32,
+body #note33,
+body #note34,
+body #note35,
 body #note4,
+body #note41,
+body #note42,
+body #note43,
+body #note44,
+body #note45,
 main #background,
 main #note1,
+main #note11,
+main #note12,
+main #note13,
+main #note14,
+main #note15,
 main #note2,
+main #note21,
+main #note22,
+main #note23,
+main #note24,
+main #note25,
 main #note3,
-main #note4 {
+main #note31,
+main #note32,
+main #note33,
+main #note34,
+main #note35,
+main #note4,
+main #note41,
+main #note42,
+main #note43,
+main #note44,
+main #note45 {
   position: absolute;
-  top: 50%;
   left: 50%;
-  height: 100%;
+  width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
+html #background,
+body #background,
+main #background {
+  top: 50%;
+}
+
+html #note1,
+html #note11,
+html #note12,
+html #note13,
+html #note14,
+html #note15,
+html #note2,
+html #note21,
+html #note22,
+html #note23,
+html #note24,
+html #note25,
+html #note3,
+html #note31,
+html #note32,
+html #note33,
+html #note34,
+html #note35,
+html #note4,
+html #note41,
+html #note42,
+html #note43,
+html #note44,
+html #note45,
+body #note1,
+body #note11,
+body #note12,
+body #note13,
+body #note14,
+body #note15,
+body #note2,
+body #note21,
+body #note22,
+body #note23,
+body #note24,
+body #note25,
+body #note3,
+body #note31,
+body #note32,
+body #note33,
+body #note34,
+body #note35,
+body #note4,
+body #note41,
+body #note42,
+body #note43,
+body #note44,
+body #note45,
+main #note1,
+main #note11,
+main #note12,
+main #note13,
+main #note14,
+main #note15,
+main #note2,
+main #note21,
+main #note22,
+main #note23,
+main #note24,
+main #note25,
+main #note3,
+main #note31,
+main #note32,
+main #note33,
+main #note34,
+main #note35,
+main #note4,
+main #note41,
+main #note42,
+main #note43,
+main #note44,
+main #note45 {
+  visibility: hidden;
+}
+
 body {
   position: fixed;
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */

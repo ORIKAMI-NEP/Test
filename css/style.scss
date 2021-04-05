@@ -1,26 +1,122 @@
 html,
 body,
 main {
-  position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
+  header {
+    position: absolute;
+    display: grid;
+
+    width: 95%;
+    grid-template:
+      "... start ... down ... disp ... up"
+      /9% 20% 2% 21% 2% 21% 2% 20%;
+    #start,
+    #down,
+    #up {
+      font-size: 1.5em;
+      font-weight: bold;
+
+      width: 100%;
+      height: 8vh;
+      margin-top: 0.4em;
+      color: #03a9f4;
+      border-top: solid 2px black;
+      border-bottom: solid 2px black;
+    }
+    #disp {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 0.4em;
+      padding-top: 0.5em;
+      text-align: center;
+      color: #fff;
+      border-bottom: solid 6px #3f87ce;
+      background: #6eb7ff;
+      p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    #start {
+      grid-area: start;
+    }
+    #down {
+      grid-area: down;
+    }
+    #disp {
+      grid-area: disp;
+    }
+    #up {
+      grid-area: up;
+    }
+  }
   #background,
   #note1,
+  #note11,
+  #note12,
+  #note13,
+  #note14,
+  #note15,
   #note2,
+  #note21,
+  #note22,
+  #note23,
+  #note24,
+  #note25,
   #note3,
-  #note4 {
+  #note31,
+  #note32,
+  #note33,
+  #note34,
+  #note35,
+  #note4,
+  #note41,
+  #note42,
+  #note43,
+  #note44,
+  #note45 {
     position: absolute;
-    top: 50%;
     left: 50%;
-    height: 100%;
+    width: 100%;
     transform: translate(-50%, -50%);
+  }
+  #background {
+    top: 50%;
+  }
+  #note1,
+  #note11,
+  #note12,
+  #note13,
+  #note14,
+  #note15,
+  #note2,
+  #note21,
+  #note22,
+  #note23,
+  #note24,
+  #note25,
+  #note3,
+  #note31,
+  #note32,
+  #note33,
+  #note34,
+  #note35,
+  #note4,
+  #note41,
+  #note42,
+  #note43,
+  #note44,
+  #note45 {
+    visibility: hidden;
   }
 }
 body {
   position: fixed;
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
 }

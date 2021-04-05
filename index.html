@@ -13,13 +13,23 @@
 
 <body>
   <main>
-    <img src='img/background.png' alt='背景' id="background">
-    <img src='img/note1.png' alt='ノート1' id="note1">
-    <img src='img/note3.png' alt='ノート3' id="note3">
-    <img src='img/note4.png' alt='ノート4' id="note4">
-    <img src='img/note2.png' alt='ノート2' id="note2">
+    <p>
+      <img src='img/background.png' alt='背景' id="background">
+      <img src='img/note1.png' alt='ノート1' id="note1">
+      <img src='img/note2.png' alt='ノート2' id="note2">
+      <img src='img/note3.png' alt='ノート3' id="note3">
+      <img src='img/note4.png' alt='ノート4' id="note4">
+    </p>
+    <header>
+      <button type="button" onclick="play();" id="start">Start</button>
+      <button type="button" onclick="setSpeed(-0.1);" id="down">-0.1</button>
+      <div id="disp">
+        <p></p>
+      </div>
+      <button type="button" onclick="setSpeed(+0.1);" id="up">+0.1</button>
+    </header>
   </main>
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
